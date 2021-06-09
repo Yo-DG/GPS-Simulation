@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>GPS</title>
+        <link href="styleAp.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="logo-iut.png" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+
+    <body>
+        <!-- --------------------------------------------------------------------------------------- -->
+        <nav>
+            <!-- --------------------------------------------------------------------------------------- -->
+            <div id="data">
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="choix">
+                    <button id="btnDest" onclick="displayDest()">Destination</button>
+                    <button id="btnCog" onclick="displayCog()">COG</button><br>
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="choixDest">
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ptnDepBlockCh1" class="colonne">
+                        Point de départ :<br><br>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="latDepBlockCh1" class="colonne">
+                            <label for="latDepName">Latitude de départ : </label><br>
+                            <input type="number" id="latDepV" name="latDepName" placeholder="LatDep" required>
+                        </div>
+
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="lonDepBlockCh1" class="colonne">
+                            <label for="lonDepName">Longitude de départ : </label><br>
+                            <input type="number" id="lonDepV" name="lonDepName" placeholder="LonDep" required>
+                        </div>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="sogBlockCh1" class="colonne">
+                        <label for="sog">SOG : </label><br>
+                        <input type="number" id="sogV" name="sog" placeholder="sog" required>
+                        <br>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ptnDestBlock" class="colonne">
+                        Point d'arrivée :<br><br>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="latDestBlock" class="colonne">
+                            <label for="latDestName">Latitude d'arrivée : </label><br>
+                            <input type="number" id="latDestV" name="latDestName" placeholder="LatDest" required>
+                        </div>
+
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="lonDestBlock" class="colonne">
+                            <label for="lonDestName">Longitude d'arrivée : </label><br>
+                            <input type="number" id="lonDestV" name="lonDestName" placeholder="LonDest" required>
+                        </div>
+                    </div>
+
+                    <input type="submit" id="btnDestValue" value="Valider" onclick="displayDataDest()">
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="choixCog">
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="sogBlockCh2" class="colonne">
+                        <label for="sog2">SOG : </label><br>
+                        <input type="number" id="sogV2" name="sog2" placeholder="sog" required>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ptnDepBlockCh2" class="colonne">
+                        Point de départ :<br><br>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="latDepBlockCh2" class="colonne">
+                            <label for="latDepName2">Latitude de départ : </label><br>
+                            <input type="number" id="latDepV2" name="latDepName2" placeholder="LatDep" required>
+                        </div>
+
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="lonDepBlockCh2" class="colonne">
+                            <label for="lonDepName2">Longitude de départ : </label><br>
+                            <input type="number" id="lonDepV2" name="lonDepName2" placeholder="LonDep" required>
+                        </div>
+                        <br> 
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="cogBlock" class="colonne">
+                        <label for="cog">COG : </label><br>
+                        <input type="number" id="cogV" name="cog" placeholder="cog" required>
+                    </div>
+
+                    <input type="submit" id="btnCogValue" value="Valider" onclick="displayDataCog()"><br>
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="dataDest">
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ligne1Dest">
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="pointDep" class="colonne">
+                            Point de départ : <br>
+                            <span id="latDep">NA</span>, <span id="lonDep">NA</span><br>
+                            <br>
+                        </div>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="pointAct" class="colonne">
+                            Position actuelle : <br>
+                            <span id="lat">NA</span>, <span id="lon">NA</span><br>
+                            <br>
+                        </div>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="pointDest" class="colonne">
+                            Point d'arrivée : <br>
+                            <span id="latDest">NA</span>, <span id="lonDest">NA</span><br>
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ligne2Dest">
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="dParc" class="colonne">
+                            Distance parcourue : <span id="d">NA</span>m
+                        </div>
+                        <br>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="blockSog" class="colonne">
+                            SOG : <span id="sog">NA</span>
+                        </div>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="blockCog" class="colonne">
+                            COG : <span id="cog">NA</span>
+                        </div>
+
+                        <div id="arriveDestination">Arrivé à destination !</div>
+                        <button id="btnChoix" onclick="displayChoix()">Changer les paramètres</button>
+                    </div>
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="dataCog">
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ligne1Cog">
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="pointDep2" class="colonne">
+                            Point de départ : <br>
+                            <span id="latDep2">NA</span>, <span id="lonDep2">NA</span><br>
+                            <br>
+                        </div>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="pointAct2" class="colonne">
+                            Position actuelle : <br>
+                            <span id="lat2">NA</span>, <span id="lon2">NA</span><br>
+                            <br>
+                        </div>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="dParc2" class="colonne">
+                            Distance parcourue : <br>
+                            <span id="d2">NA</span>m<br>
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ligne2Cog">
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="blockSog2" class="colonne">
+                            SOG : <span id="sog2">NA</span>
+                        </div>
+                        <!-- --------------------------------------------------------------------------------------- -->
+                        <div id="blockCog2" class="colonne">
+                            COG : <span id="cog2">NA</span>
+                        </div>
+
+                        <button id="btnChoix" onclick="displayChoix()">Changer les paramètres</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------------------------------------------------------------------------------- -->
+            <div id="wifi">
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="displayWf" class="wifi">
+                    <button id="btnDisplayWf" onclick="displayWf()">Wi-Fi</button>
+                </div>
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="ligneWf1">
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ssidD" class="wifi">
+                        <label for="ssid">SSID : <span id="ssid"></span></label><br>
+                        <input type="text" id="ssidV" name="ssid" placeholder="ssid" required>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="passwordD" class="wifi">
+                        <label for="password">Password : </label><br>
+                        <input type="password" id="passwordV" name="password" placeholder="password" required>
+                    </div>
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------- -->
+                <div id="ligneWf2">
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="ipD" class="wifi">
+                        <label for="ip">IP address : <span id="ip"></span></label><br>
+                        <input type="text" id="ipV" name="ip" value="192.168." required>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="dnsD" class="wifi">
+                        <label for="dns">DNS address : <span id="dns"></span></label><br>
+                        <input type="text" id="dnsV" name="dns" value="192.168." required>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="gatewayD" class="wifi">
+                        <label for="gateway">Gateway address : <span id="gateway"></span></label><br>
+                        <input type="text" id="gatewayV" name="gateway" value="192.168." required>
+                    </div>
+
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div id="subnetD" class="wifi">
+                        <label for="subnet">Subnet address : <span id="subnet"></span></label><br>
+                        <input type="text" id="subnetV" name="subnet" value="255.255.255.0" required>
+                    </div>
+                </div>
+                <input type="submit" id="btnWf" class="wifi" value="Connexion" onclick="wifiConfig()"><br>
+            </div>
+
+            <!-- --------------------------------------------------------------------------------------- -->
+            <div id="btn">
+                <center>
+                    Simulation <span id="simState">off</span><br>
+                    <button type="button" onclick="sendData(1)">ON</button>
+                    <button type="button" onclick="sendData(0)">OFF</button><br> 
+                </center>  
+            </div>
+        </nav>
+
+        <!-- --------------------------------------------------------------------------------------- -->
+        <header>
+            <img id="icon" src="logo-iut.png">
+            <h1>
+                Simulation GPS
+            </h1>
+        </header>
+        
+        <script src="fonctionAp.js"></script>
+    </body>
+</html>
+
+
+

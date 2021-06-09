@@ -1,0 +1,7 @@
+{
+    "port": "COM6",
+    "board": "esp32:esp32:esp32doit-devkit-v1",
+    "output": "C:/Users/Yohann/Documents/Arduino/Build",
+    "configuration": "FlashFreq=80,UploadSpeed=921600,DebugLevel=none",
+    "sketch": "SimuGPSTest1.ino"
+}

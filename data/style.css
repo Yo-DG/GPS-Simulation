@@ -1,0 +1,121 @@
+/* --------------------------------------------------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-color: lightblue; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+.colonne{
+    display: inline-block;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#col1{
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    /* background-color: forestgreen; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+nav{
+    float: left;
+    height: 100%;
+    width: 100%;
+    /* background-color: deepskyblue; */
+    background: linear-gradient(150deg,white,deepskyblue,dodgerblue,deepskyblue, white);
+}
+
+/* --------------------------------------------------------------------------------------- */
+#data{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 2% 2%;
+    /* background-color: firebrick; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+.data{
+    margin-bottom: 10vh;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#btn{
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    /* background-color: greenyellow; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+button{
+    width: 45%;
+    display: inline-block;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#col2{
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    /* background-color: gold; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+header{
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-left-style: solid;
+    /* background-color: deepskyblue; */
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#icon{
+    height: 100%;
+    position: absolute;
+    left: 2%;
+}
+
+/* --------------------------------------------------------------------------------------- */
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* background-color: indigo; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+#mapdiv{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top-style: solid;
+    border-left-style: solid;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#dataDest,#dataCog,#choixDest,#choixCog,#arriveDestination{
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#btnChoix{
+    width: auto;
+}
+
+/* --------------------------------------------------------------------------------------- */
+.choix{
+    margin-bottom: 5vh;
+}

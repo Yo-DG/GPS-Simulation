@@ -1,0 +1,142 @@
+/* --------------------------------------------------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-color: lightblue; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+header{
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom-style: solid;
+    /* background-color: rgb(142, 214, 238); */
+    background: linear-gradient(150deg,white,deepskyblue,deepskyblue,dodgerblue,deepskyblue,deepskyblue, white);
+}
+
+/* --------------------------------------------------------------------------------------- */
+#icon{
+    height: 100%;
+    position: absolute;
+    left: 2%;
+}
+
+/* --------------------------------------------------------------------------------------- */
+h1{
+    width: 100%;
+    text-align: center;
+    /* background-color: indigo; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+nav{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    /* background-color: dodgerblue; */
+    background-image: url("backgroundAp.jpg");
+    background-size: cover;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#data{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: xx-large;
+    border-style: solid;
+    padding: 1%;
+    /* background-color: firebrick; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+.colonne{
+    display: inline-block;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#pointAct{
+    margin: 0 10%;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#btn{
+    padding: 1vh;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: x-large;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    /* background-color: greenyellow; */
+}
+
+/* --------------------------------------------------------------------------------------- */
+button{
+    height: 3vh;
+    width: 7vh;
+    display: inline-block;
+    /* background-color: rgb(142, 214, 238); */
+}
+
+/* --------------------------------------------------------------------------------------- */
+#wifi{
+    padding: 1vh;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    font-size: large;
+    border-bottom-style: solid;
+    border-right-style: solid;
+}
+
+/* --------------------------------------------------------------------------------------- */
+.wifi{
+    display: inline-block;
+    margin: 0 1vh;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#ligneWf1,#ligneWf2,#btnWf,#dataDest,#dataCog,#choixDest,#choixCog,#arriveDestination{
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------------- */
+input{
+    width: 15vh;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#btnDest,#btnCog,#btnChoix{
+    height: 5vh;
+    width: 14vh;
+    font-size: large;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#btnChoix{
+    margin-left: 90%;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#btnCogValue{
+    margin-left: 90%;
+}
+
+/* --------------------------------------------------------------------------------------- */
+#btnDestValue{
+    margin-left: 90%;
+}
+
