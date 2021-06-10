@@ -1,40 +1,30 @@
 # GPS Simulation
 
-Une petite description du projet
+This project was made to simulate a travel with a boat. It will calculate the position during the travel based on the parameters you will set.
 
-## Pour commencer
+## To begin
 
-Entrez ici les instructions pour bien débuter avec votre projet...
+### Prerequisites
 
-### Pré-requis
-
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Programme 1
-- Programme 2
-- etc...
+- A web browser
+- A device with an access to Wi-Fi connections
+- Something to power up the ESP32
 
 ### Installation
 
-Les étapes pour installer votre programme....
+Open your Wi-Fi settings on your device and select "ESP32-GPS".
 
-Dites ce qu'il faut faire...
+Type the password.
 
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
+Open your browser and type "192.168.4.1".
+
+## Start-up
 
 
-Ensuite vous pouvez montrer ce que vous obtenez au final...
+## Made with
 
-## Démarrage
-
-Dites comment faire pour lancer votre projet
-
-## Fabriqué avec
-
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-_exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
-* [Atom](https://atom.io/) - Editeur de textes
+* Arduino - 
+* ESP32 - 
+* HTML/CSS/JavaScript
 
 
