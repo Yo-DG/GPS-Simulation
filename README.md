@@ -6,9 +6,10 @@ This project was made to simulate a travel with a boat. It will calculate the po
 
 ### Prerequisites
 
-- A web browser
-- A device with an access to Wi-Fi connections
+- An ESP32
 - Something to power up the ESP32
+- A device with an access to Wi-Fi connections
+- A web browser
 
 ### Installation
 
